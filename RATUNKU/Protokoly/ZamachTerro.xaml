@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RATUNKU.Protokoly.ZamachTerro"
+             BackgroundColor="PapayaWhip"
+             Title="Zamach Terrorystyczny">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image
+                    Source="zamch.jpg"
+                    WidthRequest="300"
+                    HeightRequest="300"
+                    Margin="10"/>
+                <Frame BackgroundColor="Red" >
+                    <Label Text="Oznaki" 
+                           LineBreakMode="WordWrap"
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           FontSize="20"
+                           HeightRequest="30"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="#A7BFE8">
+                    <Label LineBreakMode="WordWrap"
+                           Text="1.Pozostawione bez opieki w miejscach publicznych przedmioty typu teczki, paczki i pakunki
+                           &#10;2.Pdejrzana zawartośc przesyłki bez danych i adresu nadawcy bądź od nadawcy lub z miejsc z którego się nie spodziewamy
+                           &#10;3.Samochody a zwłaszcza furgonetki pozostawione poza wyznaczonymi miejscami np. w bliskim sąsiedztwie kościołów, miejsc organizowania imprez masowych,zawodów sportowych lub zgromadzeń."
+                           FontAttributes="Bold" 
+                           TextColor="#1A42A2" 
+                           FontSize="16"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="Red" >
+                    <Label Text="Postępowanie" 
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           FontSize="20"
+                           HeightRequest="30"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="#A7BFE8">
+                    <Label LineBreakMode="WordWrap" 
+                           Text="1.W przypadku jakichkolwiek podejrzeń powiadomić służbę ochrony obiektu lub jego administratora.
+                           &#10;2.Nie rozpowrzechniać informaji o podejrzeniu, aby nie spowodować paniki
+                           &#10;3.Nie próbwać obezwładniać podejrzanych osób (należy zapamiętać cechy charakterystyczne)
+                           &#10;4.W przypadku realnego zagrożenia oddalić się od miejsca zagrożenia a także poinformować wszystkich przebywających w pobliżu o zagrożeniu"
+                           
+                           FontAttributes="Bold" 
+                           TextColor="#1A42A2" 
+                           FontSize="16"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="Red" >
+                    <Label Text="Zobacz również" 
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           FontSize="20"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="#A7BFE8" HeightRequest="50">
+                    <Label Text="Historia najsłynniejszego ataku terrorystycznego w USA."
+                           TextColor="Blue"
+                           TextDecorations="Underline"
+                           FontAttributes="Bold" 
+                           FontSize="16">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="GoMovie" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

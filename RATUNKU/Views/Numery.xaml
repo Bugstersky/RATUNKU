@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RATUNKU.Views.Numery"
+             BackgroundColor="PapayaWhip">
+
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Button Text="" WidthRequest="110" HorizontalOptions="Center" HeightRequest="110" ImageSource="fire2.png" BackgroundColor="#C81212" BorderColor="#BBA5A5" BorderRadius="55"  Grid.Row="0" Grid.Column="0" 
+                    Padding="10" Margin="15" Clicked="Fire_Call"  />
+            <Label Text="STRAŻ POŻARNA"
+                   HorizontalOptions="Center"
+                   TextColor="#f50100"
+                   FontAttributes="Bold"/>
+            <Button Text="" WidthRequest="110" HorizontalOptions="Center" HeightRequest="110" ImageSource="police.png" BackgroundColor="#269ffe" BorderColor="#BBA5A5" BorderRadius="55"  Grid.Row="0" Grid.Column="0" 
+                    Padding="10" Margin="15" Clicked="PoliceCall"/>
+            <Label Text="POLICJA"
+                   HorizontalOptions="Center"
+                   TextColor="#1A42A2"
+                   FontAttributes="Bold"/>
+            <Button Text="" WidthRequest="110" HorizontalOptions="Center" HeightRequest="110" ImageSource="ambulance2.png" BackgroundColor="#A7BFE8" BorderColor="#BBA5A5" BorderRadius="55"  Grid.Row="0" Grid.Column="0" 
+                    Padding="20" Margin="15"  Clicked="AmbulanceCall"/>
+            <Label Text="POGOTOWIE RATUNKOWE"
+                   HorizontalOptions="Center"
+                   TextColor="#A7BFE8"
+                   FontAttributes="Bold"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

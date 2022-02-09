@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RATUNKU.Protokoly.Paczka"
+             BackgroundColor="PapayaWhip"
+             Title="Podejrzana paczka">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image
+                    Source="paczka.jpg"
+                    WidthRequest="300"
+                    HeightRequest="300"
+                    Margin="10"/>
+                <Frame BackgroundColor="Red" >
+                    <Label Text="Oznaki" 
+                           LineBreakMode="WordWrap"
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           FontSize="20"
+                           HeightRequest="30"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="#A7BFE8">
+                    <Label LineBreakMode="WordWrap"
+                           Text="1.Stempl lub dane nadawcy wskazują , że jest z innego źródła niż oczekiwano
+                           &#10;2.Brak informacji o nadawcy
+                           &#10;3.Z opakowania wysypuje się proszek lub wycieka inna substancja 
+                           &#10;4.Wydobywają się z niej podejrzane dźwięki
+                           &#10;5 Namcalnie wyczuwane są kable,proszek,granulki lub substancja galaretowata"
+                           FontAttributes="Bold" 
+                           TextColor="#1A42A2" 
+                           FontSize="16"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="Red" >
+                    <Label Text="Postępowanie" 
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           FontSize="20"
+                           HeightRequest="30"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="#A7BFE8">
+                    <Label LineBreakMode="WordWrap" 
+                           Text="1.Oddalić się na bezpieczną odległość min.10m
+                           &#10;2.Jeśli jesteś w pomieszczeniu niezwłocznie je opuśc i powiadom Policje
+                           &#10;3.Pamiętaj aby nie naruszać zawartości paczki, nie wąchaj ,nie dotykaj
+                           &#10;4.Pakunek pozostaw na miejscu i stosuj się do poleceń funkcjonariuszy"
+                           FontAttributes="Bold" 
+                           TextColor="#1A42A2" 
+                           FontSize="16"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="Red" >
+                    <Label Text="Zobacz również" 
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           FontSize="20"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="#A7BFE8" HeightRequest="30">
+                    <Label Text="W jaki sposób rozbroić bombę ?"
+                           TextColor="Blue"
+                           TextDecorations="Underline"
+                           FontAttributes="Bold" 
+                           FontSize="16">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="GoMovie" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

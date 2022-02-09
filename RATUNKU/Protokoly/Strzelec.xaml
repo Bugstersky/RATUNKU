@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RATUNKU.Protokoly.Strzelec"
+             BackgroundColor="PapayaWhip"
+             Title="Aktywny Strzelec">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image
+                    Source="strzelec.jpg"
+                    WidthRequest="300"
+                    HeightRequest="300"
+                    Margin="10"/>
+                <Frame BackgroundColor="Red" >
+                    <Label Text="Oznaki" 
+                           LineBreakMode="WordWrap"
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           FontSize="20"
+                           HeightRequest="30"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="#A7BFE8">
+                    <Label LineBreakMode="WordWrap"
+                           Text="1.Strzaly 
+                           &#10;2.Krzyki ludzi
+                           &#10;3.Odgłosy paniki
+                           &#10;4.Najczęściej zamaskowana osoba z karabinem maszynowym"
+                           FontAttributes="Bold" 
+                           TextColor="#1A42A2" 
+                           FontSize="16"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="Red" >
+                    <Label Text="Postępowanie" 
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           FontSize="20"
+                           HeightRequest="30"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="#A7BFE8">
+                    <Label LineBreakMode="WordWrap" 
+                           Text="1.Uciekać i zlokalizować bezpieczne miejsce
+                           &#10;2.Unikać owartej przestrzeni
+                           &#10;3.Podczas ucieczki należy pamiętać aby nie utknąć w miejscu bez drugiego wyjścia 
+                           &#10;4.Wyciszyć urządzenia mogące doprowadzć zamachowca 
+                           &#10;5.Jeśli jesteś bezpieczny powiadomić Policję"
+                           
+                           FontAttributes="Bold" 
+                           TextColor="#1A42A2" 
+                           FontSize="16"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="Red" >
+                    <Label Text="Zobacz również" 
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           FontSize="20"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="#A7BFE8" HeightRequest="40">
+                    <Label Text="Postępowanie w przypadku aktywnego strzelca."
+                           TextColor="Blue"
+                           TextDecorations="Underline"
+                           FontAttributes="Bold" 
+                           FontSize="16">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="GoMovie" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

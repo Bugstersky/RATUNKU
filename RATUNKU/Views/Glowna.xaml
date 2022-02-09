@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RATUNKU.Views.Glowna"
+             BackgroundColor="PapayaWhip">
+
+        
+    
+        <ContentPage.Content>
+        <Grid>
+        <Frame HeightRequest="500" WidthRequest="300" CornerRadius="20" Margin="3,3,3,3" >
+            <Image Source="anim.gif" IsAnimationPlaying="True"/>
+        </Frame>
+            <Label Text="Pierwsza Pomoc" Padding="80" HorizontalOptions="CenterAndExpand" FontSize="20" FontAttributes="Bold" />
+            <!--<SearchBar x:Name="searchBar"
+                   HorizontalOptions="Fill"
+                   VerticalOptions="StartAndExpand"
+                   Placeholder="Wpisz nazwę poszukiwanego protokołu.."
+                   CancelButtonColor="Orange"
+                   PlaceholderColor="Orange"
+                   TextTransform="Lowercase"
+                   HorizontalTextAlignment="Start"
+                       TextChanged="OnTextChanged"/>
+          
+            <ListView x:Name="searchResults"
+                      HorizontalOptions="Fill"
+                      VerticalOptions="CenterAndExpand"
+                      ItemTapped="GetTappedItem"/>-->
+
+
+        </Grid>
+    </ContentPage.Content>
+
+
+</ContentPage>

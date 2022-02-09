@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RATUNKU.Protokoly.Zlamanie"
+             BackgroundColor="PapayaWhip"
+             Title="Złamanie kończyny">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image
+                    Source="zlamanie.jpg"
+                    WidthRequest="300"
+                    HeightRequest="200"
+                    Margin="20"/>
+                <Frame BackgroundColor="Red" >
+                    <Label Text="Objawy" 
+                           LineBreakMode="WordWrap"
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           FontSize="20"
+                           HeightRequest="30"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="#A7BFE8">
+                    <Label LineBreakMode="WordWrap"
+                           Text="1.Silny ból,nasilający się przy próbie ruchu 
+                           &#10;2.Obrzęk w miejscu złamania 
+                           &#10;3.Zniekształcenie kończyny 
+                           &#10;4.Nienaturalne ułożenie kończyny 
+                           &#10;5.Ograniczenie funkcji złamanej kończyny" 
+                           FontAttributes="Bold" 
+                           TextColor="#1A42A2" 
+                           FontSize="16"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="Red" >
+                    <Label Text="Postępowanie" 
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           FontSize="20"
+                           HeightRequest="30"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="#A7BFE8">
+                    <Label LineBreakMode="WordWrap" 
+                           Text="Zasada Potta mówi o tym ,że jeżeli złamanie dotyczy kości długich,to unieruchomienie swoim zasięgiem powinno obejmować okolicę co najmniej dwóch sąsiadujących ze złamaniem stawów." 
+                           FontAttributes="Bold" 
+                           TextColor="#1A42A2" 
+                           FontSize="16"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="Red" >
+                    <Label Text="Zobacz również" 
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           FontSize="20"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="#A7BFE8" HeightRequest="30">
+                    <Label Text="Jak postępować w przypadku złamania???"
+                           TextColor="Blue"
+                           TextDecorations="Underline"
+                           FontAttributes="Bold"
+                           FontSize="16">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="GoMovie" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

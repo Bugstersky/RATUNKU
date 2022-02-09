@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RATUNKU.Protokoly.Krwotok"
+             BackgroundColor="PapayaWhip"
+             Title="Krwotok">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image
+                    Source="krwotok.jpg"
+                    WidthRequest="300"
+                    HeightRequest="200"
+                    Margin="20"/>
+                <Frame BackgroundColor="Red" >
+                    <Label Text="Objawy" 
+                           LineBreakMode="WordWrap"
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           FontSize="20"
+                           HeightRequest="30"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="#A7BFE8">
+                    <Label LineBreakMode="WordWrap"
+                           Text="Szybka utrata krwi z uszkodzonego naczynia krwionośnego,która w krótkim czasie może doprowadzić do wstrząsu krwotocznego"
+                           FontAttributes="Bold" 
+                           TextColor="#1A42A2" 
+                           FontSize="16"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="Red" >
+                    <Label Text="Postępowanie" 
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           FontSize="20"
+                           HeightRequest="30"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="#A7BFE8">
+                    <Label LineBreakMode="WordWrap" 
+                           Text="Ze względu na umiejscowienie krwotoki dzielimy je na zewnętrzne i wewnętrzne.
+                           
+                           Algorytm postępowania w przypadku krwotoku zewnętrznego: 
+                           &#10;1.Ocena stanu poszkodowanego : świadomości, oddechu, szukanie cech zachowanego krążenia i tamowanie krwotoku
+                           &#10;2.Wezwanie pomocy
+                           &#10;3.Umocowanie opatrunku: kontynuować ucisk do ustania krwawienia.Taki opatrunek nazywamy opatrunkiem uciskowym.
+                           &#10; 4.Jeśl opatrunek przesiąka krwią - dołożyć kolejne warstwy nie zdejmując starego i nie zwalniając ucisku.
+                           &#10;5.Jeśli krwawienie nadal nie ustaje, unieść krwawią kończynę nie zwalniając ucisku.
+                           6.Unieruchomić i unieść krwawiącą kończynę
+                           7.Jeśli powyższe metody zawodzą - zastosować ucisk na tętnice powyżej miejsca krwawienia.
+                           8.W ostatecznośći stosować opaskę uciskową: powinna być stosowana raczej w bardzo ciężkich urazach jak amputacje lub zmiażdżenia&#13;
+                           &#13;
+                           &#10;Algorytm postępowania w przypadku krwotoku wewnętrzengo:
+                           &#10; 1.Ocena stanu psozkodowanego : świadomości, oddechu, szukanie cech zachowanego krążenia 
+                           &#10; 2.Wezwanie pomocy
+                           &#10; 3.Zebranie wywiadu
+                           &#10; 4.Ułożenie poszkodowanego w pozycji przecwiwstrząsowej (z lekko uniesionymi kończynami dolnymi)
+                           &#10; 5.Okrycie poszkodowanego 
+                           &#10;6.Okresowa kontrola parametrów życiowych
+                           &#10;7.Nie podować poszkodowanemu niczego doustnie" 
+                           FontAttributes="Bold" 
+                           TextColor="#1A42A2" 
+                           FontSize="16"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="Red" >
+                    <Label Text="Zobacz również" 
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           FontSize="20"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="#A7BFE8" HeightRequest="30">
+                    <Label Text="Sprawdź w jaki sposób hamować krwotoki"
+                           TextColor="Blue"
+                           TextDecorations="Underline"
+                           FontAttributes="Bold" 
+                           FontSize="16">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="GoMovie" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

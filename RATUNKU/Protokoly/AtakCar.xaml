@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RATUNKU.Protokoly.AtakCar"
+             Title="Atak przy użyciu pojazdu">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image
+                    Source="auto.png"
+                    WidthRequest="300"
+                    HeightRequest="200"
+                    Margin="20"/>
+                <Frame BackgroundColor="Red" >
+                    <Label Text="Oznaki" 
+                           LineBreakMode="WordWrap"
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           FontSize="20"
+                           HeightRequest="30"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="#A7BFE8">
+                    <Label LineBreakMode="WordWrap"
+                           Text="Jeśli znajdujesz się na zatłoczonym deptaku i słyszysz odgłosy paniki oraz samochód potrącający przechodniów - zejdź mu z drogi i uciekaj" 
+                           FontAttributes="Bold" 
+                           TextColor="#1A42A2" 
+                           FontSize="16"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="Red" >
+                    <Label Text="Postępowanie" 
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           FontSize="20"
+                           HeightRequest="30"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="#A7BFE8">
+                    <Label LineBreakMode="WordWrap" 
+                           Text="1.Uciekaj prostopadle do toru jazdy pojazdu, aby zejść z jego drogi. &#10;2.Schroń się przed poojazdem wykorzystyując otoczenie.Użyj jako osłony drzew,słupów,budynki
+                           3.Porzuć rzecz, które mogą Cię spowolnić.&#13;4.Pamiętaj,że kierowca może być uzbrojony - zachowaj czujność i bezpieczną odległość"
+                           FontAttributes="Bold" 
+                           TextColor="#1A42A2" 
+                           FontSize="16"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="Red" >
+                    <Label Text="Zobacz również" 
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           FontSize="20"
+                           
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="#A7BFE8">
+                    <Label Text="Sprawdź koniecznie ofertę wypożyczalni samochodów dostawczych!!"
+                           TextColor="Blue"
+                           TextDecorations="Underline"
+                           FontAttributes="Bold"
+                           FontSize="16">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Go_Car" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

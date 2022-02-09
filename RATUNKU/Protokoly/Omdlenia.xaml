@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RATUNKU.Protokoly.Omdlenia"
+             BackgroundColor="PapayaWhip"
+             Title="Omdlenie">
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image
+                    Source="omdlenie.jpg"
+                    WidthRequest="300"
+                    HeightRequest="300"
+                    Margin="10"/>
+                <Frame BackgroundColor="Red" >
+                    <Label Text="Objawy" 
+                           LineBreakMode="WordWrap"
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           FontSize="20"
+                           HeightRequest="30"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="#A7BFE8">
+                    <Label LineBreakMode="WordWrap"
+                           Text="Omdlenie to krótkotrwała utrata przytomności spowodowana niedostatecznym dotlenieniem mózgu objawja się zawrotami głowy,nudnościami, zaburzeniem widzenia czy bladą skórą."
+                           FontAttributes="Bold" 
+                           TextColor="#1A42A2" 
+                           FontSize="16"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="Red" >
+                    <Label Text="Postępowanie" 
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           FontSize="20"
+                           HeightRequest="30"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="#A7BFE8">
+                    <Label LineBreakMode="WordWrap" 
+                           Text="Procedura w przypadku zemdlenia :
+                           1.Nie pionizować pacjenta
+                           &#10;2.ocena ABC
+                           &#10;3.Unieś nogi poszkodowanego, bądź zastosuj pozycję czterokończynową &#10;(tzw.koszyczek - wszystkie kończyny uniesione do góry)
+                           &#10;4.Rozluźnij ubranie pod szyją osobie omdlałej
+                           5.Jeżeli jesteś w pomieszczeniu - otwórz okno"
+                           
+                           FontAttributes="Bold" 
+                           TextColor="#1A42A2" 
+                           FontSize="16"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="Red" >
+                    <Label Text="Zobacz również" 
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           FontSize="20"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Frame BackgroundColor="#A7BFE8" HeightRequest="50">
+                    <Label Text="Padł? Niech powstanie zobacz jak zrobić to poprawnie."
+                           TextColor="Blue"
+                           TextDecorations="Underline"
+                           FontAttributes="Bold" 
+                           FontSize="16">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="GoMovie" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

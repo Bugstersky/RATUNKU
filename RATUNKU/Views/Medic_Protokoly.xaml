@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RATUNKU.Views.Medic_Protokoly"
+             BackgroundColor="PapayaWhip">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center" >
+                <Frame BackgroundColor="Red" >
+                    <Label Text="Podstawowe zagadnienia" 
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           FontSize="20"
+                           HeightRequest="30"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Button Text="Udar mózgu" 
+                        ImageSource="brain.png"
+                        Padding="10"
+                        Clicked="P_Udar" 
+                        BackgroundColor="#A7BFE8" 
+                        TextColor="#1A42A2" 
+                        CornerRadius="20"
+                        Margin="3,3,3,3"
+                        FontAttributes="Bold" />
+
+                <Button Text="Złamanie"  
+                        BackgroundColor="#A7BFE8" 
+                        TextColor="#1A42A2" 
+                        ImageSource="broken_bone.png"
+                        CornerRadius="20"
+                        Clicked="P_Zlamanie"
+                        Margin="3,3,3,3"
+                        FontAttributes="Bold"/>
+
+                <Button Text="Krwotok" 
+                        BackgroundColor="#A7BFE8" 
+                        TextColor="#1A42A2"
+                        ImageSource="blood.png"
+                        CornerRadius="20"
+                        Margin="3,3,3,3"
+                        Clicked="P_Krwotok"
+                        FontAttributes="Bold"/>
+
+                <Button Text="Omdlenie" 
+                        BackgroundColor="#A7BFE8" 
+                        TextColor="#1A42A2"
+                        ImageSource="faint.png"
+                         CornerRadius="20"
+                        Clicked="P_Omdlenie"
+                        Margin="3,3,3,3"
+                        FontAttributes="Bold"/>
+
+                <Frame BackgroundColor="Red">
+                    <Label Text="Zagrożenia terrorystyczne" 
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           FontSize="20"
+                           HeightRequest="30"
+                           HorizontalOptions="CenterAndExpand" />
+                </Frame>
+                <Button Text="Zamach Terrorystyczny" 
+                        BackgroundColor="#A7BFE8" 
+                        TextColor="#1A42A2" 
+                        ImageSource="terrorist.png"
+                        CornerRadius="20"
+                        Margin="3,3,3,3"
+                        Clicked="P_Zamach"
+                        FontAttributes="Bold"/>
+
+                <Button Text="Aktywny Strzelec" 
+                        BackgroundColor="#A7BFE8" 
+                        TextColor="#1A42A2" 
+                         CornerRadius="20"
+                        Margin="3,3,3,3"
+                        FontAttributes="Bold"
+                        Clicked="P_Strzelec"
+                        ImageSource="rifle.png"/>
+
+                <Button Text="Atak przy użyciu pojazdu" 
+                        BackgroundColor="#A7BFE8" 
+                        TextColor="#1A42A2"
+                        ImageSource="van.png"
+                        CornerRadius="20"
+                        Margin="3,3,3,3"
+                        Clicked="P_CarAttack"
+                        FontAttributes="Bold"/>
+
+                <Button Text="Podejrzana przesyłka,paczka" 
+                        BackgroundColor="#A7BFE8"
+                        TextColor="#1A42A2"
+                        ImageSource="bomb.png"
+                        CornerRadius="20"
+                        Margin="3,3,3,3"
+                        Clicked="P_Paczka"
+                        FontAttributes="Bold"/>
+
+                <Button Text="Postępowanie w przypadku sytuacji zakładniczej"
+                        BackgroundColor="#A7BFE8" 
+                        TextColor="#1A42A2"
+                        ImageSource="hostage.png"
+                        CornerRadius="20"
+                        Margin="3,3,3,3"
+                        Clicked="P_Zakladnik"
+                        FontAttributes="Bold"/>
+
+                <Button Text="Postępowanie po wybuchu bomby"
+                        BackgroundColor="#A7BFE8"
+                        TextColor="#1A42A2" 
+                        CornerRadius="20"
+                        Margin="3,3,3,3"
+                        Clicked="P_Wybuch"
+                        ImageSource="explosion.png"
+                        FontAttributes="Bold"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
