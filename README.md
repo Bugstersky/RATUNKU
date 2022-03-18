@@ -13,6 +13,8 @@ Sources : Icons are from : https://iconarchive.com and main page gif --> https:/
 ## Ratunku app
 The main purpose of this project was to create an application for learning first aid .
 * Below short video that shows this app :\
+[![Ratunku app]
+[![main_page](https://user-images.githubusercontent.com/98978049/158975793-a7715a23-2182-4aab-93f2-bc131e7030ff.png)]
 https://user-images.githubusercontent.com/98978049/158975300-7eed4b5a-22a9-4b14-8bab-f522bae70e40.mp4
 
 
