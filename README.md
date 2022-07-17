@@ -6,7 +6,7 @@
 
 
 ## General info
-My first non-commercial app using Xamarin . 
+My first non-commercial app using Xamarin for a study project. 
 Sources : Icons are from : https://iconarchive.com and main page gif --> https://media.giphy.com/media/TlK63EB2qbqGwnK4ZSo/giphy.gif
 
 
